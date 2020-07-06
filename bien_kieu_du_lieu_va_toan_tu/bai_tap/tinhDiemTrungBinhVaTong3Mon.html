@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <title>bai-1</title>
+</head>
+<body>
+     <script>
+         /*Khai báo biến: */
+
+             var inputPhysical;
+             var inputChemitry;
+             var inputBiological;
+
+         /*Nhập điểm từ bàn phím: */
+
+             inputPhysical = prompt("Physical: ");
+             inputChemitry = prompt("Chemitry: ");
+             inputBiological = prompt("Biological: ");
+         /*Chuyển đổi số nguyên: */
+             var Physical = parseInt(inputPhysical);
+             var Chemitry = parseInt(inputChemitry);
+             var Biological = parseInt(inputBiological);
+         /*  Tính tổng 3 môn và điểm trung bình: */
+            var toTal = Physical + Chemitry +Biological;
+            var meDiumScore = toTal /3;
+
+            /*Hiển thị: */
+           alert("Total = "+toTal);
+           alert("MediumScore = "+meDiumScore);
+
+
+     </script>
+</body>
+</html>

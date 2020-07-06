@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen-doi-tien-te</title>
+    <style>
+        div {
+            float: left;
+            text-align: center;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+      <div>
+           <!--Nhập tiền: -->
+          <label><strong>Amount</strong></label>
+          <br>
+          <input type="text" id="money">
+      </div>
+      <div>
+          <label><strong>From Currence</strong></label><br/>
+          <select id="tienGoc">
+              <option value="VND" selected>VND</option>
+              <option value="USD">USD</option>
+          </select>
+      </div>
+      <div>
+          <label><strong>To Currency</strong></label><br/>
+          <select id="tienDoi">
+              <option value="USD">USD</option>
+              <option value="VND">VND</option>
+          </select>
+      </div>
+      <div style="margin-top: 17px;">
+          <input type="button" value="Convert" onclick="toChangeMoney()">
+      </div>
+      <br/>
+      <br/>
+      <p id="result"></p>
+    </form>
+     <script>
+         function toChangeMoney() {
+             let money = parseInt(document.getElementById("money").value);
+             let tienGoc = document.getElementById("tienGoc").value;
+             let tienDoi = document.getElementById("tienDoi").value;
+             let ketQua = 0;
+             if(tienGoc == "VND" && tienDoi == "USD")
+             {
+                 ketQua = 23000*money;
+             } else if(tienGoc=="USD" && tienDoi=="VND"){
+                 ketQua = money/23000;
+             } else {
+                 ketQua = " Nhap lai";
+             }
+
+             document.getElementById("result").innerHTML = "Result = " + ketQua;
+         }
+     </script>
+</body>
+</html>

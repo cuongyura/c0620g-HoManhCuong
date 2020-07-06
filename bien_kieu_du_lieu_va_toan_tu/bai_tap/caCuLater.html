@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>CaCuLaTer</title>
+</head>
+<body>
+    <label><strong style="font-size: 25px;">Caculater</strong></label>
+    <br/>
+    <br/>
+    <input type="text" id="number1">
+    <input type="text" id="number2">
+    <br/>
+    <br/>
+    <input type="button" value="Addition(+)" onclick="thucHienToanCong()">
+    <input type="button" value="Addition(-)" onclick="thucHienToanTru()">
+    <input type="button" value="Addition(X)" onclick="thucHienToanNhân()">
+    <input type="button" value="Addition(/)" onclick="thucHienToanChia()">
+    <br/>
+    <br/>
+    <p id="result"></p>
+    <script>
+        // Hàm sử lý:
+        /*Cộng: */
+       function thucHienToanCong() {
+           let number1 = document.getElementById("number1").value;
+           let number2 = document.getElementById("number2").value;
+           number1 = parseInt(number1);
+           number2 = parseInt(number2);
+           let ketQua = 0;
+           ketQua = number1 + number2;
+           document.getElementById("result").innerHTML = "Result = " + ketQua;
+       }
+       /*Trừ: */
+        function thucHienToanTru() {
+            let number1 = document.getElementById("number1").value;
+            let number2 = document.getElementById("number2").value;
+            number1 = parseInt(number1);
+            number2 = parseInt(number2);
+            let ketQua = 0;
+            ketQua = number1 - number2;
+            document.getElementById("result").innerHTML = "Result = " + ketQua;
+        }
+        /*Nhân: */
+        function thucHienToanNhân() {
+            let number1 = document.getElementById("number1").value;
+            let number2 = document.getElementById("number2").value;
+            number1 = parseInt(number1);
+            number2 = parseInt(number2);
+            let ketQua = 0;
+            ketQua = number1 * number2;
+            document.getElementById("result").innerHTML = "Result = " + ketQua;
+        }
+        /*Chia: */
+        function thucHienToanChia() {
+            let number1 = document.getElementById("number1").value;
+            let number2 = document.getElementById("number2").value;
+            number1 = parseInt(number1);
+            number2 = parseInt(number2);
+            let ketQua = 0;
+            ketQua = number1 / number2;
+            document.getElementById("result").innerHTML = "Result = " + ketQua;
+        }
+    </script>
+</body>
+</html>
