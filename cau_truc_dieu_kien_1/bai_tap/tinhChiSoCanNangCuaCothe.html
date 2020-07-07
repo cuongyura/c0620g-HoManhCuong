@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <form>
+          <label><strong>Cân Nặng</strong></label>
+           <br>
+          <input type="text" id="weight">
+          <br/>
+          <br>
+          <label><strong>Chiều Cao</strong></label>
+          <br>
+          <input type="text" id="height">
+          <br>
+          <br>
+          <input type="submit" value="Submit" onclick="ketQua()">
+          <script>
+             function ketQua() {
+                    let weight = document.getElementById("weight").value;
+                    let height = document.getElementById("height").value;
+                    /*chuyển đổi: */
+                    weight = parseFloat(weight);
+                    height = parseFloat(height);
+                    let bmi = 0;
+                    bmi = weight/(height*height);
+
+                    if(bmi <18){
+                        alert("BMI là= "+bmi);
+                        document.write(" Underweight");
+                    }else if(bmi < 25.0){
+                        alert("BMI là= "+bmi);
+                        document.write(" Normal");
+                    }else if(bmi < 30.0){
+                        alert("BMI là= "+bmi);
+                        document.write(" Overweight");
+                    }else {
+                        alert("BMI là= "+bmi);
+                        document.write(" Obese");
+                    }
+             }
+          </script>
+      </form>
+</body>
+</html>
