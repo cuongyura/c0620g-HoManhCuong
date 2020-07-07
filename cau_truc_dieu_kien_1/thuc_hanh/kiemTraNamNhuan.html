@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiemtraNamNhuan</title>
+</head>
+<body>
+    <script>
+           /*Nhập vào năm cần kiểm tra: */
+            let year ;
+            year = prompt("Nhập năm vào: ");
+            /*Chuyển : */
+            year = parseInt(year);
+             if((year%4==0 && year%100!=0) || (year%400 ==0)){
+                 alert(year + " là năm nhuận ");
+             }else{
+                 alert(year + " là năm ko nhuận ");
+             }
+    </script>
+</body>
+</html>
