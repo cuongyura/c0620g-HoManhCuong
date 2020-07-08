@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <script>
+         /*Khai báo biến: */
+         let doanhSoBanHang = prompt("Nhập Doanh số bán hàng: ");
+         /*chuyển kiểu: */
+         doanhSoBanHang = parseFloat(doanhSoBanHang);
+         let tienHoaHong = 0;
+         if(doanhSoBanHang >= 10000000){
+             tienHoaHong = (doanhSoBanHang*5)/100;
+         }else if(doanhSoBanHang >= 5000000){
+             tienHoaHong = (doanhSoBanHang*2.5)/100;
+         }else if (doanhSoBanHang >= 1000000){
+             tienHoaHong = (doanhSoBanHang*1)/100;
+         }else{
+             tienHoaHong = 0;
+             alert("Doanh thu bán hàng : "+doanhSoBanHang +" dưới 1 triệu nên không thể nhận hoa hồng");
+         }
+         document.write("Số tiền hoa hồng nhận được: "+tienHoaHong);
+     </script>
+</body>
+</html>

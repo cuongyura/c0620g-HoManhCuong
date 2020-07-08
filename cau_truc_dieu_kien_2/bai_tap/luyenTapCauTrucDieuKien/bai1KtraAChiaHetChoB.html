@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <script>
+            let numberA = prompt("Nhập giá trị A: ");
+            let numberB = prompt("Nhâp giá trị B: ");
+            numberA = parseInt(numberA);
+            numberB = parseInt(numberB);
+            let check = numberA % numberB == 0;
+            if(check){
+                 alert(numberA +" chia hết cho "+numberB);
+            }else{
+                alert(numberA +" Không chia hết cho "+numberB);
+            }
+
+        </script>
+</body>
+</html>

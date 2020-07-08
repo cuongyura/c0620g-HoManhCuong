@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+       <script>
+           /*Khai báo biến: */
+           let chuyenCan = prompt("Nhập điểm chuyền cần: ");
+           let giuaKy = prompt("Nhập điểm giữa kỳ: ");
+           let cuoiKy = prompt("Nhập điểm cuối kỳ: ");
+           chuyenCan = parseFloat(chuyenCan);
+           giuaKy = parseFloat(giuaKy);
+           cuoiKy = parseFloat(cuoiKy);
+           let ketQua = 0;
+           ketQua = (chuyenCan*20+giuaKy*20+cuoiKy*60)/100;
+           if(ketQua  >= 8.5){
+               alert(ketQua+" Đạt lọai A ");
+           }else if(ketQua >= 7.0){
+               alert(ketQua+" Đạt lọai B ");
+           }else if(ketQua >= 5.0 ){
+               alert(ketQua+" Đạt lọai C ");
+           }else if(ketQua >= 3.5){
+               alert(ketQua+" Đạt lọai D ");
+           }else{
+               alert(ketQua+" Đạt lọai F ");
+           }
+
+       </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberA = prompt("Nhập A: ");
+    let numberB = prompt("Nhập B: ");
+    numberA = parseInt(numberA);
+    numberB = parseInt(numberB);
+    let nghiemPT =0;
+    if(numberA==0){
+        if(numberB !=0 ){
+          alert("Phương trình bậc nhất: "+numberA+"x + "+numberB+"y"+ " = 0"+" =>vô nghiệm");
+        }else{
+            alert("Phương trình bậc nhất: "+numberA+"x +"+numberB+"y"+ " = 0"+" => vô số nghiệm");
+        }
+    }else {
+         if(numberB !=0 ){
+             nghiemPT = -numberB/numberA;
+             alert("Phương trình bậc nhất: "+numberA+"x + "+numberB+"y"+ " = 0"+" => có nghiệm X = "+nghiemPT);
+         }else{
+             alert("Phương trình bậc nhất: "+numberA+"x + "+numberB+"y"+ " = 0"+" => có nghiệm X = 0");
+         }
+    }
+
+
+</script>
+</body>
+</html>

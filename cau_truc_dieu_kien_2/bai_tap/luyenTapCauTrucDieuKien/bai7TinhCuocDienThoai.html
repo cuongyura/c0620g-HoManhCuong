@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+       <script>
+           const phiMacDinh = 25000;
+           let soPhutGoi = prompt("Nhập số phút đã gọi");
+           soPhutGoi = parseInt(soPhutGoi);
+           let phiCuocGoi =0;
+           let tongTien = 0;
+           if(soPhutGoi > 200){
+            phiCuocGoi = (soPhutGoi-200)*200+150*400+50*600;
+           } else if(soPhutGoi > 50){
+            phiCuocGoi = (soPhutGoi-50)*400+50*600;
+           }else {
+            phiCuocGoi = soPhutGoi*600;
+            }
+           tongTien = 0.01*phiCuocGoi*phiMacDinh;
+           document.write("Cước phí sử dụng điện thoại phải trả là: "+tongTien);
+       </script>
+</body>
+</html>
