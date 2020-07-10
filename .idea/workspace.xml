@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbf8f7ef-69b1-4ffa-9c1a-81ce7203aaa0" name="Default Changelist" comment="" />
+    <list default="true" id="bbf8f7ef-69b1-4ffa-9c1a-81ce7203aaa0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/git_va_html/bai_tap/~$o_cv_ca_nhan.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/git_va_html/thuc_hanh/~$_dung_the_html_cb.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmform_va_table/thuc_hanh/~$oBangNangCao.docx" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1dqY3wFciv9pxI8EbNdfpHoCEEB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -16,6 +25,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -29,10 +45,21 @@
       <updated>1593153894968</updated>
       <workItem from="1593153897772" duration="270000" />
       <workItem from="1593154206625" duration="84000" />
+      <workItem from="1593165368532" duration="136000" />
+      <workItem from="1593165522484" duration="256000" />
+      <workItem from="1593567899075" duration="661000" />
+      <workItem from="1593999480919" duration="757000" />
+      <workItem from="1594368435440" duration="99000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1593999519352">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593999519352" />
   </component>
 </project>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <script>
+          let result;
+          let num = parseInt(prompt("Mời bạn nhập vào một khoảng số: "));
+          result = Math.floor(Math.random()*num);
+          let guess = parseInt(prompt("Nhập số ngẫu nhiên trong khoảng dự đoán"));
+          for (let i=0;i<2;i++){
+              if(guess == result){
+                  document.write("win");
+                  break;
+              }else{
+                  guess = parseInt(prompt("Mời bạn nhập lại: "));
+              }
+          }
+      </script>
+</body>
+</html>

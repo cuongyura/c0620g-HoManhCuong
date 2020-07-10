@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       /*mở thẻ bảng: */
+       let sout;
+       let kq =0;
+       sout = "<table border= '1' width='800' cellspacing= '0' cellspadding='3'>"
+       for(let i = 2; i <= 9;i++){
+           sout +="<tr>";
+           for (let j = 1; j <= 10;j++){
+               kq = i*j;
+               sout = sout + "<td>" +i+" x "+j+" = "+kq+ "</td>";
+           }
+           sout +="</tr>";
+       }
+       sout +="</table>";
+       document.write(sout);
+   </script>
+</body>
+</html>
