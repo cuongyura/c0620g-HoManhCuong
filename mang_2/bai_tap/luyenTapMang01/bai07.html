@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       let array = new Array(10);
+       for (let i =0 ; i<array.length;i++){
+           array[i] = prompt("Nhập phần tử thứ : "+i);
+       }
+       alert(array+" ");
+       let ve = prompt("Nhập một số V: ");
+       for (let j=0;j<array.length;j++){
+           if(ve===array[j]){
+               array.splice(j,1);
+               array.push(0);
+           }
+       }
+       alert(array+" ");
+   </script>
+</body>
+</html>

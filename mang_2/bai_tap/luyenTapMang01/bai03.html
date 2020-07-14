@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+       /*Khởi tạo mảng số nguyên: */
+       let array = [4,55,14,32,34,67,1,2,0];
+       let max = array[0];
+       let trungBinh = 0;
+       for(let i = 0 ; i<array.length;i++){
+           trungBinh +=array[i]
+           if (array[i]>max){
+               max = array[i];
+           }
+
+       }
+       document.write("Giá trị lớn nhất là : "+max);
+       document.write("<br/>");
+       document.write("Tổng trung bình cộng là: "+trungBinh/array.length);
+  </script>
+</body>
+</html>

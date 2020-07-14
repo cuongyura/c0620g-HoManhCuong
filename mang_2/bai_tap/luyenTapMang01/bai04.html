@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <script>
+         /*nhập num là số lượng phần tử của mảng: */
+         let num = parseInt(prompt("Nhập vào num: "));
+         /*Khởi tạo mảng với chiều dài num:*/
+         let array = new Array(num);
+         /*nhập mảng: */
+         for(let i = 0; i< array.length; i++){
+            array[i]= parseInt(prompt("Nhập phần tử thứ : "+i+" : "));
+         }
+           /*in ra giá trị mảng:*/
+            alert("Array =[ "+array+"]");
+            /*đảo ngược: */
+            alert("Array =["+array.reverse().join()+"]");
+
+
+
+     </script>
+</body>
+</html>

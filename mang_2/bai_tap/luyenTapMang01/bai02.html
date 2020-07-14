@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <script>
+         let Array = [3,4,2,6,67,8,33,445,55,64];
+         let max = Array[0];
+         let index = 0;
+         for(let i = 1;i<Array.length;i++){
+             if(Array[i] > max){
+               max = Array[i];
+               index =i;
+             }
+         }
+         document.write("Giá trị lớn nhất trong mảng là: "+max+"\n"+" nằm ở vị trí: "+index);
+     </script>
+</body>
+</html>
