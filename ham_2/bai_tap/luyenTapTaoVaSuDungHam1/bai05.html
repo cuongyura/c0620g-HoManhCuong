@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+
+     function hamNhanVaoChuoi( str) {
+         let array1 = ['Polaris' , 'Aldebaran' , 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+         let array2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+         for (let i = 0; array1.length; i++) {
+             for (let j = 0; j < array2.length; j++) {
+                 if (str === array1[i]) {
+                      alert(array1[i]);
+                 }
+                  if (array1[i] === array2[j]) {
+                         alert(array2[j]);
+                   }
+                 }
+             }
+
+
+
+     }
+     let str = prompt("Nhập vào chuỗi: ");
+     let result = hamNhanVaoChuoi(str);
+     document.write(result);
+ </script>
+
+</body>
+</html>

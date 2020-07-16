@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let foot = parseFloat(prompt("Nhập vào giá trị foot: "));
+    let met = parseFloat(prompt("Nhập vào giá trị met: "));
+    /*khai báo hàm chuyển đối feet sang mét: : */
+    function foottomet(foot) {
+        let meter = 0.305 * foot;
+        return meter;
+    }
+    function mettofoot(met){
+        let footer = 0.329*met;
+        return footer;
+    }
+      do {
+          alert("\t \t \t \t"+"------menu-----" + "\n"
+              + "1. chuyển feet sang mét" + "\n"
+              + "2. chuyển met sang feet" + "\n"
+          );
+          let x = parseInt(prompt("Mời bạn nhập sự lựa chọn: "));
+          /*gọi hàm: */
+          switch (x) {
+              case 1:
+                  let result = foottomet(foot);
+                  document.write("feet= " + foot + " => mét = " + result);
+                  break;
+              case 2:
+                  let result1 = mettofoot(met);
+                  document.write("mét= " + met + " => feet = " + result1);
+                  break;
+          }
+          }while (x > 0 && x<=2)
+
+
+</script>
+</body>
+</html>

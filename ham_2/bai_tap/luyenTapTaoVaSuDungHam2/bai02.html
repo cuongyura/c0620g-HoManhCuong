@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const  pi = 3.14;
+     /*tính chu vi: */
+    function tinhChuViHinhTron(banKinhR) {
+      let tinhChuVi = 1;
+         tinhChuVi = 2*pi*banKinhR;
+         return tinhChuVi;
+    }
+    /*tính diện tích: */
+    function tinhDienTichHinhTron(banKinhR) {
+        let tinhDienTich = 1;
+        tinhDienTich = pi*banKinhR*banKinhR;
+        return tinhDienTich;
+    }
+    do {
+        let banKinhR = parseFloat(prompt("Nhâp vào bán kính R: "));
+        /*gọi hàm tính diện tích: */
+        alert("\t\t\t\t menu "+"\n"
+               +"1. tính chu vi."+"\n"
+               +"2. tính diện tích.");
+        let x = parseInt(prompt("Nhập vào sự chọn lựa: "));
+        switch (x) {
+                case 1:
+                let result = tinhChuViHinhTron(banKinhR);
+                document.write("Chu vi hình tròn là : " + result);
+                break;
+                case 2:
+                let result1 = tinhDienTichHinhTron(banKinhR);
+                document.write("Diện tích hình tròn là : " + result1);
+                 break;
+        }
+    }while (x > 0 && x <= 2)
+</script>
+</body>
+</html>
