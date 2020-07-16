@@ -3,14 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="bbf8f7ef-69b1-4ffa-9c1a-81ce7203aaa0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/git_va_html/bai_tap/~$o_cv_ca_nhan.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/git_va_html/thuc_hanh/~$_dung_the_html_cb.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmform_va_table/thuc_hanh/~$oBangNangCao.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ham_1/thuc_hanh/bai01ThucHanhVaTaoHam.html" beforeDir="false" afterPath="$PROJECT_DIR$/ham_1/thuc_hanh/bai01ThucHanhVaTaoHam.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ham_2/bai_tap/luyenTapTaoVaSuDungHam2/bai7.html" beforeDir="false" afterPath="$PROJECT_DIR$/ham_2/bai_tap/luyenTapTaoVaSuDungHam2/bai7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mang_1/thuc_hanh/taoBanCaRoDonGian.html" beforeDir="false" afterPath="$PROJECT_DIR$/mang_1/thuc_hanh/taoBanCaRoDonGian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mang_1/thuc_hanh/timGiaTriLonNhatTrongMang.html" beforeDir="false" afterPath="$PROJECT_DIR$/mang_1/thuc_hanh/timGiaTriLonNhatTrongMang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mang_2/bai_tap/luyentapMang02/bai01.html" beforeDir="false" afterPath="$PROJECT_DIR$/mang_2/bai_tap/luyentapMang02/bai01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mang_2/bai_tap/luyentapMang02/bai03.html" beforeDir="false" afterPath="$PROJECT_DIR$/mang_2/bai_tap/luyentapMang02/bai03.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mang_2/bai_tap/luyentapMang02/bai05.html" beforeDir="false" afterPath="$PROJECT_DIR$/mang_2/bai_tap/luyentapMang02/bai05.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mang_2/bai_tap/luyentapMang02/bai06.html" beforeDir="false" afterPath="$PROJECT_DIR$/mang_2/bai_tap/luyentapMang02/bai06.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,9 +35,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/democ6" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,17 +62,39 @@
       <workItem from="1593165522484" duration="256000" />
       <workItem from="1593567899075" duration="661000" />
       <workItem from="1593999480919" duration="757000" />
-      <workItem from="1594368435440" duration="99000" />
+      <workItem from="1594368435440" duration="2770000" />
+      <workItem from="1594468254921" duration="43000" />
+      <workItem from="1594886561491" duration="59000" />
     </task>
+    <task id="LOCAL-00001" summary="jgjgjgj">
+      <created>1594368629033</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594368629033</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="jgjgjgj" />
+    <option name="LAST_COMMIT_MESSAGE" value="jgjgjgj" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1593999519352">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1594368626620">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593999519352" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594368626620" />
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1594886572269">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594886572269" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1594368641702">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594368641702" />
   </component>
 </project>

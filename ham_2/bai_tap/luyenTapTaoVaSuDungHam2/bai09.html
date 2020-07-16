@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <script>
+         let str = ['c','d','d','a','f','g','h'];
+         let kyTuBatKy = 'd';
+         function hamTruyenMangVaKiTuDeCheck(str , kyTuBatKy) {
+           let count =0;
+           let check = false;
+             for (let i = 0; i<str.length; i++){
+               if (kyTuBatKy === str[i]){
+                   count++;
+                   check = true;
+               }
+           }
+             if(check) {
+                 return count;
+             }else{
+                 return -1;
+             }
+
+         }
+
+         let result = hamTruyenMangVaKiTuDeCheck(str,kyTuBatKy);
+
+         document.write("số lần xuất hiện: "+result);
+     </script>
+</body>
+</html>

@@ -7,13 +7,15 @@
 <body>
       <script>
           function doiChoHaiSo(a,b) {
-
-             return numbera,numberb;
-            }
+             let doiChoHaiSo = a;
+             a = b;
+             b = doiChoHaiSo;
+             return alert(a+","+b);
+}
             let a = parseInt(prompt("nhập a: "));
             let b = parseInt(prompt("nhập b: "));
-            let result = doiChoHaiSo(a,b);
-            document.write(result);
+             doiChoHaiSo(a,b);
+
       </script>
 
 </body>
