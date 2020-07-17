@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor(name) {
+            this.name = name;
+            this.battery = 100;
+            this.texting = '';
+            this.inbox = [];
+            this.outbox = [];
+            this.onOff = true;
+        }
+        onOffCheck() {
+            this.battery--;
+            return this.onOff;
+        }
+        turnOnOff() {
+            this.onOff ? this.onOff = false : this.onOff = true;
+            this.battery--;
+        }
+        charge() {
+            if (this.onOff) {
+                this.battery = 100;
+            }
+        }
+        message() {
+            if (this.onOff) {
+                this.battery--;
+                this.texting = prompt('Soạn tin nhắn: ');
+                return this.texting;
+            }
+        }
+        receive(phone) {
+            if (this.onOff) {
+                this.battery--;
+                this.inbox.push(phone.message());
+            }
+        }
+        send(phone) {
+            if (this.onOff) {
+                this.battery--;
+                this.outbox.push(this.texting);
+                phone.inbox.push(this.texting);
+            }
+        }
+        viewInbox() {
+            if (this.onOff) {
+                this.battery--;
+                return this.inbox;
+            }
+        }
+        viewOutbox() {
+            if (this.onOff) {
+                this.battery--;
+                return this.outbox;
+            }
+        }
+    }
+    let nokia = new Mobile('Nokia');
+    let iphone = new Mobile('Iphone');
+    nokia.message();
+    nokia.send(iphone);
+    alert(iphone.inbox);
+</script>
+</body>
+</html>

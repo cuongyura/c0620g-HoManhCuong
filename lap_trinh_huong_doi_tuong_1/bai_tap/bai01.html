@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Rectangle{
+           /*khởi tạo chiều dài và chiều rộng: */
+             constructor(chieuDai ,chieuRong) {
+              this.height = chieuDai;
+              this.width = chieuRong;
+             }
+             /*method tính chuvi: */
+             chuVi(){
+                 let chuvi = 2*( this.width + this.height);
+                 alert("chu vi là: "+chuvi+"\n");
+             }
+             dienTich(){
+                 let dientich = this.width*this.height;
+                 alert("Diện tích là: "+dientich+"\n");
+             }
+
+        }
+             /*Khởi tạo đối tượng: */
+
+             let hcn1 = new Rectangle(10,2);
+             let hcn2 = new Rectangle(15,3);
+             let hcn3 = new Rectangle(17,4);
+             /*tính chu vi và diện tích hình chữ nhật 1: */
+
+               alert("Hình chữ nhật 1: "+hcn1.height+", "+hcn1.width);
+                /*tính chuvi: */
+                 hcn1.chuVi();
+                /*tính diện tích: */
+                 hcn1.dienTich();
+
+                /*tính chu vi và diện tích hình chữ nhật 3: */
+
+                alert("Hình chữ nhật 2: "+hcn2.height+", "+hcn2.width);
+                /*tính chuvi: */
+                hcn2.chuVi();
+                /*tính diện tích: */
+                hcn2.dienTich();
+
+                /*tính chu vi và diện tích hình chữ nhật 3: */
+
+                alert("Hình chữ nhật 3: "+hcn3.height+", "+hcn3.width);
+                /*tính chuvi: */
+                hcn3.chuVi();
+                /*tính diện tích: */
+                hcn3.dienTich();
+    </script>
+</body>
+</html>

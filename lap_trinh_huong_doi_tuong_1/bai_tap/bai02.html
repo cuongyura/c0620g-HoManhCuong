@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Temperature{
+            /*khởi tạo đối tượng: */
+            constructor(doCe) {
+                this.doCe = doCe;
+            }
+            chuyenNhietDoCeSangF(){
+                let doF = (((9*this.doCe)/32) +32);
+                alert("=> Độ F là: "+doF);
+            }
+            chuyenNhietDoCSangKenVin(){
+                let doKenVin = this.doCe + 273.15;
+                alert("=> Độ K là: "+doKenVin);
+            }
+        }
+        // tạo đối tướng
+        doce1 = new Temperature(25);
+         do{
+                 alert("\t\t\t\t ---- Menu-------"+"\n"
+                       +"1. chuyển nhiệt độ C sang độ F: "+"\n"
+                       +"2. chuyển nhiệt độ C sang độ K: "+"\n"
+                       +"3.Thoát"+"\n"
+                  );
+                  let x = parseInt(prompt("Nhập vào giá trị x: "));
+
+        switch (x) {
+             case 1: doce1.chuyenNhietDoCeSangF();
+                   break;
+             case 2: doce1.chuyenNhietDoCSangKenVin();
+                   break;
+             default:
+                 alert("bạn không muốn tính hả");
+                   break;
+        }
+         }while (x>0 && x<=3);
+    </script>
+</body>
+</html>
