@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <label style="color: red">Adam</label><br><br>
+     <button id="adam" onclick="thongTinADam()">Thông tin Adam</button><br><br>
+      <label style="color: red">EVa</label><br><br>
+      <button id="eva" onclick="thongTinEVa()">Thông tin Eva</button><br><br>
+      <button onclick="adamSay()">AdamSay</button>
+      <button onclick="evaSay()">EvaSay</button>
+      <button onclick="thongTinQuaTao()">thông tin quả táo</button>
+      <button>Eva Ăn</button>
+      <button>Adam Ăn</button>
+
+      <p id="result"></p>
+     <script>
+               /*tạo lớp quả táo: */
+         class Apple{
+             constructor(weight,soLuong) {
+                 this.weight = weight;
+                 this.soLuong = soLuong;
+             }
+             /*giảm bớt quả táo: */
+             decreaseApple(){
+                 return this.weight--;
+             }
+             /*kiểm tra xem quả táo còn hay không */
+             isEmpty(){
+                 if(this.weight > 0){
+                     return true;
+                 }else{
+                     return false;
+                 }
+             }
+             /*trả về quả táo: */
+             getWeight(){
+                 return this.weight;
+             }
+
+         }
+
+         /*tạo lớp human: */
+         class Human{
+             constructor(name, gender, weight) {
+                 this.name = name;
+                 this.gender = gender;
+                 this.weight = weight;
+             }
+             /*kiểm tra giới tính: */
+             isMale(){
+                 if(this.gender =='Male'){
+                     return true;
+                 }else{
+                     return false;
+                 }
+             }
+             setGender(gender){
+                 this.gender = gender;
+             }
+             checkApple(apple){
+                 if(apple.weight > 0){
+                     apple.decreaseApple();
+                     this.weight++;
+                 }else{
+                     alert("Táo đã chén hết!")
+                 }
+
+             }
+             say(string){
+                 alert(string);
+             }
+             getName(){
+                 return this.name;
+             }
+             setName(name){
+                 this.name = name;
+             }
+             getWeight(){
+                 return this.weight;
+             }
+             setWeight(){
+                 this.weight = weight;
+             }
+
+         }
+         /*tạo đối tượng: */
+         let human1 = new Human('Adam','Male',50);
+         let human2 = new Human('Eva','Female',30);
+         /*tạo quả táo: */
+         let quatao = new Apple(10,8);
+
+         function thongTinADam(){
+             document.getElementById("result").innerHTML = "Tuuii tên là: "+human1.name
+                                                            +"<br>"
+                                                            +"Giới tính:"+human1.gender
+                                                            +"<br>"
+                                                            +"Cân nặng:"+ human1.weight;
+               }
+               function thongTinEVa(){
+                   document.getElementById("result").innerHTML = "Tuuii tên là: "+human2.name
+                                                               +"<br>"
+                                                               +"Giới tính:"+human2.gender
+                                                               +"<br>"
+                                                               +"Cân nặng:"+ human2.weight;
+               }
+
+              function evaSay() {
+                  alert("Chào Adam!");
+
+              }
+              function adamSay() {
+                  alert("Chào Eva");
+              }
+              function thongTinQuaTao() {
+                  document.getElementById("result").innerHTML = "số quả táo là:"
+                                                                                 +quatao.soLuong +"<br>"
+                                                                 +"khối lượng quả táo: "
+                                                                                 +quatao.weight+" dv";
+              }
+              function evaAn() {
+
+
+              }
+     </script>
+</body>
+</html>
